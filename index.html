@@ -1,94 +1,164 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 
-  <!-- EXAMEN I PARCIAL -->
-  
+<!-- EXAMEN I PARCIAL -->
+
 <head>
 	<title>EXAMEN I PARCIAL</title>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-	
+
 	<div class="container">
-		<div class="page-header" style="width:570px; margin-left: 50px; margin-top: 50px;">
-				<h1>FORMULARIO</h1>
-		</div>		
-	</div>
-				
-	<div class="container">
-		<div class="col-lg-10" style="width:600px; margin-left: 250px; margin-top: 10px;">
-			<div class="jumbotron">
-				<form action="#" method="POST" name="FormProducto" target="_blank">
-						<fieldset id="Datos_Basicos">
-							<legend>Datos Básicos</legend>
-							  <div class="form-group">
-							  Nombre del Producto<input id="Basico1" type="text" value="" name="txtNombre" autofocus required class="form-control">
-							  </div>
-							  <br><br>
-							  Descripción<br>
-							  <textarea id="Basico2" rows="5" maxlength="100" name="txtaDescripcion" required class="form-control"></textarea><br><br>
-							  Foto:
-							  <input id="Basico3" type="file" name="foto" required class="btn btn-sm btn-info"><br><br>
-							  <div class="checkbox">
-								<input id="Basico4" type="checkbox" name="ckboxLogistica" value="Logistica" class="checkbox">Añadir información confidencial
-							  </div>
-					    </fieldset>
-						
-				</div>	
+		<div class="row">
+			<div class="page-header" style="width:570px; margin-left: 50px; margin-top: 50px;">
+				<div class="col-md-6 float-right">
+					<img class="img-responsive" src="sello.gif" width="80" height="80" style="margin-left: 120px;">
+				</div>
+				<div class="col-md-6">
+					<h1>FORMULARIO</h1>
+				</div>
+			</div>
 		</div>
 	</div>
-				
-	<br>
-						
-	
-						<fieldset>
-							  <legend>Datos Económicos</legend>
-								  <table align="left" border="0">
-									<tr>
-										<td>Precio:  </td>
-										  <td> <input id="Económico1" type="number" value="100" min="100" max="200" required class=""> </td>
-									
-										  <td> $</td>
-										  <td>&nbsp;&nbsp;&nbsp;</td>
-										  <td>Impuestos:  </td>
-										  <td>
-											  <select name="cmbImpuesto" id="Económico2" class="">
-											  <option value="4">4%</option>
-											  <option value="7">7%</option>
-											  <option value="16">16%</option>
-											  <option value="25">25%</option>
-										  </select></td>
-									 </tr>
-								  </table>		
-							  <br><br><br>
-							  <label>Promoción</label><br>
-								  <input type="radio" name="rbPromocion" value="Ninguno" id="Económico3" checked>Ninguno  <br>
-								  <input type="radio" name="rbPromocion" value="Gratuito" id="Económico3">Tranporte Gratuito<br>
-								  <input type="radio" name="rbPromocion" value="Descuento" id="Económico3">Descuento 5%<br>
-						
-						</fieldset>
-						
-						
-						
-	
-					<br><br>  
-					<div class="btn-group">
-							<input type="submit" name="btnGuardar" value="Guardar Cambios" class="btn btn-primary">
-							<input type="reset" name="btnReset" value="Borrar los datos introducidos" class="btn btn-danger">
+
+	<div class="container">
+		<div class="d-flex justify-content-center">
+			<button class="btn btn-primary" data-toggle="modal" data-target="#datosGrupo5">Datos de los estudiantes</button>
+		</div>
+		<div class="modal fade" id="datosGrupo5" tabindex="-1" role="dialog" aria-labelledby="datosDelGrupo5"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title" id="datosDelGrupo5">Nombres y apellidos</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 					</div>
-						
-						
-				</form>
-						
-			
-	
+					<div class="modal-body">
+						<ul>
+							<li>Marcelo Arias - mjarias4@espe.edu.ec</li>
+							<li>Edwin Bravo - ejbravo1@espe.edu.ec</li>
+							<li>Anthony Macas - afmacas@espe.edu.ec</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 col-sm-6 " style="width:50%; margin-left: 25%; margin-top: 10px;">
+				<div class="jumbotron">
+					<form action="#" method="POST" name="FormProducto" target="_blank">
+						<fieldset id="Datos_Basicos">
+							<legend>Datos Básicos</legend>
+							<div class="form-group">
+								Nombre del Producto<input id="Basico1" type="text" value="" name="txtNombre" autofocus required
+									class="form-control">
+							</div>
+							<br>
+							<br>Descripción<br>
+							<textarea id="Basico2" rows="5" maxlength="100" name="txtaDescripcion" required
+								class="form-control"></textarea><br><br>
+							Foto:
+							<input id="Basico3" type="file" name="foto" required class="btn btn-sm btn-info form-control"><br><br>
+							<div class="checkbox form-contro">
+								<input id="Basico4" type="checkbox" name="ckboxLogistica" value="Logistica" class="checkbox ">Añadir información confidencial
+							</div>
+						</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="container display: flex;">
+		<div class="row">
+			<div class="col-lg-10" style="width:50%; margin-left: 25%; margin-top: 10px;">
+				<div class="jumbotron ">
+					<fieldset>
+						<legend>Datos Económicos</legend>
+						<table align="left" border="0">
+
+							<tr>
+								<td><label for="sel1">Precio:</label></td>
+								<td></td>
+								<td></td>
+								<td><label for="sel1">Impuestos:</label></td>
+
+							</tr>
+							<tr>
+								<div class="flex-colum flex-md-row ">
+
+
+									<td> <input id="Económico1" type="number" value="100" min="100" max="200" required
+											class="form-control"> </td>
+
+									<td> $</td>
+									<td>&nbsp;&nbsp;&nbsp;</td>
+									<td>
+										<select name="cmbImpuesto" id="Económico2" class="form-control">
+											<option value="4">4%</option>
+											<option value="7">7%</option>
+											<option value="16">16%</option>
+											<option value="25">25%</option>
+										</select>
+									</td>
+								</div>
+							</tr>
+						</table>
+						<br><br><br><br><br>
+						<label>Promoción</label><br>
+						<div class="radio-inline">
+							<input type="radio" name="rbPromocion" value="Ninguno" id="Económico3" checked>Ninguno <br>
+							<input type="radio" name="rbPromocion" value="Gratuito" id="Económico3">Tranporte Gratuito<br>
+							<input type="radio" name="rbPromocion" value="Descuento" id="Económico3" disabled>Descuento 5%<br>
+						</div>
+					</fieldset>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container text-center ">
+		<div class="" style="width:50%; margin-left: 25%; margin-top: 10px;">
+			<p class="text-center">El Boton de color rojo, borra todos los datos introducidos en el Formulario</p>
+
+
+			<div class="btn">
+				<div class="col-md-6  ">
+					<input type="submit" name="btnGuardar" value="Guardar Cambios" class="btn btn-primary">
+				</div>
+				<div class="col-md-6  ">
+					<input type="reset" name="btnReset" value="Borrar los datos introducidos" class="btn btn-danger">
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	</div>
+	</form>
+
+	<!-- ---------------------- -->
+
+
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 
